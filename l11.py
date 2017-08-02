@@ -4,3 +4,5 @@ if 4 < 3:
     print(" " + str(k))
 else:
     print("my dick is very big")
+
+print("my humor is so beautiful!")
