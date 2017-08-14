@@ -1,6 +1,6 @@
-a = 70 >> 3
-b = ~a
-c = a << 1
-print(a, b, c)
-print(7 | 3, 7 & 3, 7 ^ 3)
-
+a = True
+b = not a
+print(a, b)
+c = a and b
+d = a or b
+print(c, d)
