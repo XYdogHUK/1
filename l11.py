@@ -1,9 +1,5 @@
-if 4 < 3:
-    print("ХУЙ")
-    k = 5
-    print(" " + str(k))
-else:
-    print("my dick is very big")
-
-print("my humor is so beautiful!")
-
+a = (5 + 2) ** 2 - 3 * 2
+b = 6 - 5 / 2
+c = 10 // 4 + 10 % 3
+print("Результаты вычислений:")
+print(a,b,c)
