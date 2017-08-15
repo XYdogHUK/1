@@ -1,9 +1,9 @@
-res = eval(input('Введите что-нибудь:'))
-resType = type(res)
-if resType == int:
-    print('Это целое число')
-elif resType == float:
-    print("Это действительное число ")
-else:
-    print("Наверное это текст")
-print("Работа завершена")
+print("Сумма натуральных чисел")
+n = 100
+text = "1+2+...+" + str(n) + " ="
+i = 1
+s = 0
+while i <= n:
+    s = s + i
+    i=i+1
+print(text,s)
