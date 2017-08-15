@@ -1,6 +1,9 @@
-res = eval(input("Введите что-то:"))
-if type(res) == int:
-    print("Вы ввели целое число!")
-else:
-    print("Это какая-то шляпа!")
-print("Я на море... а ты оставайся тут")
+res = eval(input('Введите что-нибудь:'))
+resType = type(res)
+if resType == int:
+    print('Это целое число')
+if resType == float:
+    print("Это действительное число")
+if resType != int and resType != float:
+    print("Тут точно не цифры")
+print("Всё, отстань")
