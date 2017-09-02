@@ -1,13 +1,9 @@
-def solve(f, x0, n):
-    if n == 0:
-        return x0
-    else:
-        return solve(f, f(x0), n - 1)
+def find_value(f, x):
+    print("x=", x, "->f(x)=", f(x))
 
 
-def eqn(x):
-    return (x ** 2 + 5) / 6
-
-
-x = solve(eqn, 0, 10)
-print("решение: x=", x)
+my_func = lambda x: 1 / (1 + x ** 2)
+find_value(my_func, 2.0)
+find_value(lambda x: x * (1 - x), 0.5)
+z=1+(lambda x,y: x*y-x**2) (2,3)**2
+print("z=",z)
