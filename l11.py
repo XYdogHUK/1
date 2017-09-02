@@ -1,8 +1,13 @@
-def Fib(n):
-    if n == 1 or n == 2:
-        return 1
+def solve(f, x0, n):
+    if n == 0:
+        return x0
     else:
-        return Fib(n-1)+Fib(n-2)
-print("Числа Фибоначчи:")
-for i in range(1,16):
-    print(Fib(i),end="")
+        return solve(f, f(x0), n - 1)
+
+
+def eqn(x):
+    return (x ** 2 + 5) / 6
+
+
+x = solve(eqn, 0, 10)
+print("решение: x=", x)
