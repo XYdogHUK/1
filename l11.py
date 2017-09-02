@@ -1,20 +1,13 @@
-def print_text(txt="Значение аргумента по умолчанию."):
-    print(txt)
-
-
-def show_args(a, b="Второй аргумент не указан."):
-    print(a, b)
-
-
-def my_func(x="1-й аргумент x.", y="2-й аргумент y.", ):
-    print(x, y)
-
-
-print_text("Явно указан.")
-print_text()
-show_args("Первый.", "Второй")
-show_args("Первый.")
-my_func()
-my_func("Один из аргументовю")
-my_func(y="Один из аргументовю")
-
+def solve_eqn(f,x0,n):
+    x=x0
+    for k in range(1,n+1):
+        x=f(x)
+    return x
+def eqn_1(x):
+    return (x**2+5)/6
+def eqn_2(x):
+    return (6*x-5)**0.5
+x=solve_eqn(eqn_1,0,10)
+print("1-e yravnenie: x=",x)
+x=solve_eqn(eqn_2,4,10)
+print("2-e yravnenie: x=",x)
