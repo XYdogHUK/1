@@ -1,8 +1,8 @@
-def my_pow(n):
-    return lambda x: x ** n
+x = 100
 
 
-for n in range(1, 4):
-    for x in range(1, 11):
-        print(my_pow(n)(x), end=" ")
-    print()
+def test_vars():
+    x = "local numb"
+    print("in the body func x=", x)
+    test_vars()
+    print("out func x=", x)
